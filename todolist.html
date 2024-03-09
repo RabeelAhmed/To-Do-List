@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #212121;
+        }
+
+        .box {
+            height: 150px;
+            width: 295px;
+            border: 4px solid #98ABEE;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow:auto;
+            text-align:start;
+            color: #fff;
+            padding: 10px 23px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            height: 400px;
+            width: 300px;
+            /* border:  2px solid red; */
+            color: #F57D1F;
+        }
+        
+        #put {
+            border-radius: 8px;
+            border: none;
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        .btns {
+            width: 50%;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+            background-color: aquamarine;
+            margin: 5px 0;
+        }
+
+        .savedata {
+            height: 150px;
+            width: 295px;
+            border: 4px solid #98ABEE;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow:auto;
+            text-align:start;
+            color: #fff;
+            padding: 10px 23px;
+        }
+
+        .savecontainer {
+            text-align: center;
+            color: #F57D1F;
+            position: relative;
+            bottom: 110px;
+            left: 10px;
+
+        }
+    </style>
+    <!-- <div class="container">
+        <span>To-Do-List</span>
+        <div class="box"></div>
+        <input type="text" id="get" placeholder="Enter Today Task" required>
+        <button id="btn">Add</button>
+        <button id="btn2">Remove</button>
+    </div> -->
+
+    <div class="container">
+        <span>To-Do-List</span>
+        <ol class="box"></ol>
+        <input type="text" id="put" placeholder="Enter Today Task" required>
+        <button id="btn1" class="btns">Add</button>
+        <button id="btn2" class="btns">Remove Last</button>
+        <button id="btn3" class="btns">Remove All</button>
+        <button id="btn4" class="btns">OK</button>
+    </div>
+    <div class="savecontainer">
+    <p>Today Tasks</p>
+    <div class="savedata"></div>
+</div>
+    <script src="todolist.js"></script>
+</body>
+</html>
